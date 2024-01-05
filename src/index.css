@@ -1,13 +1,104 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.offer-banner {
+  padding: 10px;
+  background-color: #f8ca6a;
+  text-align: center;
+}
+
+.nav-links {
+  margin-top: 0px;
+  padding: 20px 20px 20px 20px;
+  background-color: #fef9ee;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.nav-links li {
+  list-style-type: none;
+}
+.nav-links li a {
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+.nav-links li a img {
+  size: 50%;
+  margin-top: -40px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fab7b7;
+  background: 50% bottom -10px;
+  background-repeat: no-repeat;
+}
+.info-left {
+  padding-left: 50px;
+  padding-top: 200px;
+}
+
+.info-left h1 {
+  font-size: 52px;
+  line-height: 52px;
+  margin-bottom: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 991px;
+}
+
+.info-right img {
+  height: 100%;
+  width: 100%;
+}
+
+.btn {
+  padding: 20px 70px 20px 70px;
+  font-size: 15px;
+  font-weight: 600;
+  /* line-height: 63px; */
+  background-color: #aa1310;
+  border-radius: 23px;
+}
+
+.proofs {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.proofs p {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 10px 10px 10px;
+  text-decoration: none solid reg(43, 26, 26);
+  text-align: center;
+}
+.proofs img {
+  height: var(--height);
+  width: auto;
+  padding: 0px 10px 2px 25px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  max-height: 40px;
+  text-align: center;
 }
