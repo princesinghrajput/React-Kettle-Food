@@ -48,14 +48,14 @@
   padding: 10px 500px 0px 500px;
 }
 
-.book-container:hover {
+/* .book-container:hover {
   /* display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 1vh 5vw;
     background-color:white; */
-}
+*/
 
 .book-container img {
   height: 200px;
@@ -346,4 +346,105 @@ background-image: none;
 .quiz-btn:hover {
   background-color: #8e1018;
   cursor: pointer;
+}
+
+.mission-container {
+  display: flex;
+  background-color: rgb(247, 247, 158);
+  margin-top: 60px;
+  padding-left: 210px;
+  padding-right: 180px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  justify-content: space-between;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+}
+
+.mission-info {
+  margin-right: 80px;
+  width: 420px;
+}
+
+.mission-info h2 {
+  font-weight: 700;
+  color: black;
+}
+
+.mission-values {
+  width: 360px;
+}
+
+.mission-box {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.mission-icon {
+  margin-right: 10px;
+}
+
+.learn-btn {
+  padding: 15px 40px 15px 40px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  font-weight: 500;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.learn-btn:hover {
+  background-color: #8e1018;
+  color: white;
+  font-weight: 550px;
+  cursor: pointer;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 80px 150px 60px;
+  padding-right: 150px;
+}
+
+.sub-img {
+  margin-left: 100px;
+  border-radius: 8px;
+  width: 530px;
+  height: 556px;
+}
+
+.sub-info {
+  margin-top: 220px;
+}
+
+.save-text {
+  font-weight: 900;
+  color: black;
+  margin-left: 20px;
+}
+
+.commit-text {
+  color: black;
+  margin-left: 10px;
+  font-size: large;
+}
+
+.shop-btn {
+  padding: 20px 60px 20px 60px;
+  background-color: #aa131c;
+  border-radius: 8px;
+  color: white;
+}
+
+.shop-btn:hover {
+  background-color: #8e1018;
+}
+
+.free-text {
+  margin-top: 10px;
+  margin-left: 40px;
 }

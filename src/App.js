@@ -8,8 +8,7 @@ import ExploreBroth from "./components/ExploreBroth";
 import ShippingBundle from "./components/ShippingBundle";
 import CustomerReview from "./components/CustomerReview";
 import HealthFocus from "./components/HealthFocus";
-import Marquee from "./components/Marquee";
-
+import LearnMore from "./components/LearnMore";
 
 
 function App() {
@@ -23,7 +22,8 @@ function App() {
       <ShippingBundle/>
       <CustomerReview/>
       <HealthFocus/>
-
+      <LearnMore/>
+    
       
     </React.Fragment>
 
