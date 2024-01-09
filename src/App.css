@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -37,57 +41,101 @@
   }
 }
 
-/* *****************BOOK-CONTAINER CSS******************** */
-
-.book-container {
-  padding-right: 24px;
-  padding-left: 24px;
+.info-container {
+  position: relative;
   display: flex;
-  justify-content: space-around;
-  margin-left: 10px;
-  padding: 10px 500px 0px 500px;
+  background-color: #fdb6b7;
+  justify-content: space-between;
+  background: 50% bottom 1px;
 }
 
-/* .book-container:hover {
+.info-heading {
+  margin-top: 100px;
+  margin-left: 100px;
   /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 1vh 5vw;
-    background-color:white; */
-*/
-
-.book-container img {
-  height: 200px;
-  align-items: center;
-  margin-left: 10px;
-  padding: 10px 5px 5px 10px;
-}
-.review {
-  font-family: var(--f-medium);
-  display: block;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.1px;
-  text-align: center;
-  margin-bottom: 16px;
-  text-align: center;
-  padding-right: 25px;
-  opacity: 0.8;
-}
-.book-container h2 a {
-  /* text-align: center;
-  margin: 50px; */
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 700 !important;
-  margin: 0 0 15px;
-  text-decoration: underline;
-  font-size: 20px;
-  line-height: 20px;
+flex-wrap: wrap; */
 }
 
-.book-container h2 a:hover {
-  text-decoration: none;
+.text-1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.text-2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.kettle-img {
+  width: 700px;
+
+  /* height:200px; */
+}
+
+.shop-now {
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #aa131c;
+  border-radius: 8px;
+  border-color: #aa131c;
+  color: white;
+  font-size: larger;
+  margin-left: 100px;
+  z-index: 20;
+}
+
+.shop-now :hover {
+  cursor: pointer;
+  background-color: yellow;
+  color: blueviolet;
+  font-size: smaller;
+}
+
+/* *****************BOOK-CONTAINER CSS******************** */
+.best-selling {
+  text-align: center;
+  margin-top: 80px;
+}
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 220px;
+  margin-right: 220px;
+}
+
+.book {
+  width: 170px;
+  /* height: 256px; */
+}
+
+.book:hover {
+  width: 190px;
+}
+
+.start {
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.book-info {
+  margin-left: 18px;
+}
+
+.explore-btn {
+  margin-top: 15px;
+  padding: 20px 80px 20px 80px;
+  background-color: #aa131c;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.explore-btn:hover {
+  background-color: #8e1018;
+  color: #ffffff;
 }
 
 .star {
@@ -447,4 +495,334 @@ background-image: none;
 .free-text {
   margin-top: 10px;
   margin-left: 40px;
+}
+
+/* Recipe Crousels */
+
+.recipes-container {
+  background-color: #ffd996;
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.mouth-text {
+  /* margin-top: 100px; */
+  text-align: center;
+  font-weight: 550;
+  margin-bottom: 50px;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+  /* height: 350px; */
+}
+
+.carousel-menu {
+  width: 590px;
+  height: 400px;
+}
+
+.carousel-img {
+  width: 590px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.carousel-card-1 {
+  width: 300px;
+  height: 150px;
+  background-color: #894d2ae7;
+  z-index: 20;
+  position: absolute;
+  top: 130px;
+  /* right: 300px; */
+  border-radius: 10px;
+  padding: 40px 28px;
+}
+
+.carousel-card-1 h3 {
+  color: white;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.carousel-card-2 {
+  width: 300px;
+  height: 150px;
+  background-color: #53612ce7;
+  z-index: 20;
+  position: absolute;
+  top: 130px;
+  right: 350px;
+  border-radius: 10px;
+  padding: 40px 28px;
+}
+
+.carousel-card-2 h3 {
+  color: white;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.make-btn {
+  border-radius: 6px;
+  background-color: white;
+  color: #894d2ae7;
+  padding: 10px 30px;
+  font-size: small;
+  font-weight: 550;
+  border: none;
+}
+
+.testimonial-container {
+  margin-top: 60px;
+  font-weight: 800;
+  padding-bottom: 60px;
+  background-color: #fff9ee;
+}
+.testimonial-container h3 {
+  text-align: center;
+  font-weight: 800;
+}
+
+.test-wild {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.wild-img {
+  width: 284px;
+  height: 284px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.wild-p {
+  color: #e09600;
+  font-size: smaller;
+}
+
+.wild-info {
+  width: 286px;
+  color: black;
+  font-weight: 500;
+}
+
+.wild-des {
+  color: black;
+  text-decoration: underline;
+  font-size: small;
+}
+
+.company-container {
+  text-align: center;
+}
+
+.company-container h3 {
+  font-weight: bold;
+  color: black;
+  /* font-size: larger; */
+  margin-bottom: 40px;
+}
+
+.company-box {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 120px;
+  padding-right: 100px;
+}
+
+.box-img-1 {
+  width: 184px;
+  height: 125px;
+}
+
+.box-img-2 {
+  width: 98px;
+  height: 125px;
+}
+
+.box-img-3 {
+  width: 267px;
+  height: 69px;
+  margin-top: 30px;
+}
+
+.box-img-4 {
+  width: 267px;
+  height: 63px;
+  margin-top: 40px;
+}
+
+.store-btn {
+  border-radius: 8px;
+  color: black;
+  border: 1px solid black;
+  padding: 18px 80px;
+  background-color: transparent;
+  margin-top: 35px;
+}
+
+.store-btn:hover {
+  background-color: #8e1018;
+  color: white;
+}
+
+.first-container {
+  background-color: rgba(251, 184, 67, 0.8);
+  margin-top: 50px;
+  padding-top: 60px;
+  padding-left: 100px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.first-info h3 {
+  font-size: larger;
+  font-weight: bold;
+  color: black;
+}
+
+.form-email {
+  display: flex;
+  margin-right: 50px;
+}
+
+.form-input {
+  width: 302px;
+  height: 52px;
+  margin-right: 10px;
+  border-radius: 8px;
+  padding-left: 10px;
+  border: none;
+}
+
+.coupon-btn {
+  padding: 13px 30px;
+  background-color: #aa131c;
+  color: white;
+  width: 271px;
+  height: 52px;
+  border-radius: 8px;
+  border: none;
+}
+
+.coupon-btn:hover {
+  background-color: #8e1018;
+}
+
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #f9ac31;
+  padding-bottom: 50px;
+}
+
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 0px 20px 0px;
+}
+
+.social ul li i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.col {
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: black;
+  font-weight: normal;
+  text-transform: uppercase;
+  /* letter-spacing: 0.250em; */
+  font-weight: bolder;
+}
+
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .col ul li {
+  color: black;
+  font-size: 14px;
+  font-family: inherit;
+  /* font-weight: bold; */
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+}
+
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: red;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.last {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  font-size: small;
+  padding: 0px 100px;
+}
+
+.last a {
+  color: black;
+  text-decoration: underline;
+}
+
+.last a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.tick span {
+  color: green;
+}
+
+/* .page-crausel div span{
+  color: green;
+  font-weight: 700;
+} */
+.grow-aov-collection__header {
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,25 +1,38 @@
 import React from 'react'
+import { useCart } from './CartContext'
+import { Link } from 'react-router-dom';
 
 function Header() {
+    const { cartCount } = useCart();
     return (
         <div>
-            <header className="header">
-                <div className="offer-banner">
-                    <h2>20% Off for Life | Subscribe & Save Now</h2>
-                </div>
-                <nav className="navbar">
-                    <ul className="nav-links">
-                        <li><a href="#">Bestsellers</a></li>
-                        <li><a href="#">Bundles</a></li>
-                        <li className="logo-img">
-                            <a href="#"><img src="https://cdn.kettleandfire.com/094d784d-4b1d-4e57-9aa4-19f135559cf1/logokf.svg" alt="" /></a>
-                        </li>
-                        <li><a href="#">Learn</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Loyalty Program</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <div className="offer">
+                <h3>20% Off for Life | Subscribe &amp; Save Now</h3>
+            </div>
+            <div className="header">
+                <Link to={"/"} className='text-black no-underline'>
+                    <p className="shop-drop">shop </p>
+                </Link>
+
+                <Link to={"/bestsellers"} className='text-black no-underline'>
+                    <p>Bestsellers</p>
+
+                </Link>
+                <p>Bundles</p>
+                <h2><i className="fa-solid fa-fire kettle-heading" /> Kettle &amp; Fire</h2>
+                <p>Learn </p><span className="material-symbols-outlined">
+                    expand_more
+                </span>
+                <p>About us</p>
+                <p>Loyality Program</p>
+                <p><i className="fa-solid fa-magnifying-glass" /></p>
+                <Link to={"/login"}>
+                    <p><i className="fa-solid fa-user" /></p>
+
+                </Link>
+                <p><i className="fa-solid fa-cart-shopping" />({cartCount})</p>
+
+            </div>
         </div>
     )
 }
