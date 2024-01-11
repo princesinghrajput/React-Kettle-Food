@@ -1,0 +1,73 @@
+[debug] [2024-01-11T09:58:34.470Z] ----------------------------------------------------------------------
+[debug] [2024-01-11T09:58:34.478Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\AVITA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-11T09:58:34.479Z] CLI Version:   13.0.3
+[debug] [2024-01-11T09:58:34.479Z] Platform:      win32
+[debug] [2024-01-11T09:58:34.480Z] Node Version:  v20.10.0
+[debug] [2024-01-11T09:58:34.480Z] Time:          Thu Jan 11 2024 15:28:34 GMT+0530 (India Standard Time)
+[debug] [2024-01-11T09:58:34.481Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-11T09:58:34.495Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-11T09:58:34.496Z] > authorizing via signed-in user (psr8084@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\AVITA\Downloads\React-Kettle-Food-Wednesday-Jan-10-2024\React-Kettle-Food-Wednesday-Jan-10-2024
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-01-11T10:14:14.262Z] ----------------------------------------------------------------------
+[debug] [2024-01-11T10:14:14.267Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\AVITA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-11T10:14:14.267Z] CLI Version:   13.0.3
+[debug] [2024-01-11T10:14:14.268Z] Platform:      win32
+[debug] [2024-01-11T10:14:14.268Z] Node Version:  v20.10.0
+[debug] [2024-01-11T10:14:14.268Z] Time:          Thu Jan 11 2024 15:44:14 GMT+0530 (India Standard Time)
+[debug] [2024-01-11T10:14:14.268Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-11T10:14:14.285Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-11T10:14:14.285Z] > authorizing via signed-in user (psr8084@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\AVITA\Downloads\React-Kettle-Food-Wednesday-Jan-10-2024\React-Kettle-Food-Wednesday-Jan-10-2024
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-01-11T10:15:14.456Z] > refreshing access token with scopes: []
+[debug] [2024-01-11T10:15:14.459Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-11T10:15:14.459Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-11T10:15:14.890Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-01-11T10:15:14.891Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-11T10:15:14.892Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-01-11T10:15:14.892Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"kettlefirestore","name":"KettleFire"}
+[debug] [2024-01-11T10:15:16.626Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 401
+[debug] [2024-01-11T10:15:16.627Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.CreateProject","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-01-11T10:15:16.917Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\AVITA\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\AVITA\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
