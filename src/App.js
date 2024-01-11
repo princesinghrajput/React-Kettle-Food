@@ -11,7 +11,7 @@ import ReactDOM from "react-dom/client";
 import Login from "./components/Pages/Login/Login";
 import Signup from "./components/Pages/Login/SignUp";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Cart from './components/Cart';
 
 function App(){
   return (
@@ -34,10 +34,18 @@ const appRouter=createBrowserRouter([
     children:[
       {
         path:"/",
+        element:<Login/>
+      },
+      {
+        path:"/home",
         element:<Body/>
       },
       {
         path:"/bestsellers",
+        element:<Bestsellers/>
+      },
+      {
+        path:"/bundles",
         element:<Bestsellers/>
       },
       {
@@ -47,7 +55,11 @@ const appRouter=createBrowserRouter([
       {
         path:"/signup",
         element:<Signup/>
-      }
+      },
+      {
+        path:"cart",
+        element:<Cart/>
+      },
      
     ],
   }

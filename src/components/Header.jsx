@@ -10,7 +10,7 @@ function Header() {
                 <h3>20% Off for Life | Subscribe &amp; Save Now</h3>
             </div>
             <div className="header">
-                <Link to={"/"} className='text-black no-underline'>
+                <Link to={"/home"} className='text-black no-underline'>
                     <p className="shop-drop">shop </p>
                 </Link>
 
@@ -18,7 +18,10 @@ function Header() {
                     <p>Bestsellers</p>
 
                 </Link>
-                <p>Bundles</p>
+                <Link to={"/bundles"} className='text-black no-underline'>
+                    <p>Bundles</p>
+
+                </Link>
                 <h2><i className="fa-solid fa-fire kettle-heading" /> Kettle &amp; Fire</h2>
                 <p>Learn </p><span className="material-symbols-outlined">
                     expand_more
@@ -28,11 +31,12 @@ function Header() {
                 <p><i className="fa-solid fa-magnifying-glass" /></p>
                 <Link to={"/login"}>
                     <p><i className="fa-solid fa-user" /></p>
-
                 </Link>
+                <Link to={"/cart"} className='text-black no-underline'>
                 <p><i className="fa-solid fa-cart-shopping" />({cartCount})</p>
 
-            </div>
+                </Link>
+           </div>
         </div>
     )
 }
